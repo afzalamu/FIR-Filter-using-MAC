@@ -119,7 +119,75 @@ output reg [1:0] add_rom;
 endmodule
 ```
 
+## RLT SCHEMATIC
+Click on open elaborated design and then on Schematic.
+![image](https://github.com/user-attachments/assets/2efcfddb-e597-439c-8fd4-39c03f722977)
 
+## TESTBENCH
+Now, create a simulation source in order to perform the simulation.
+```
+`timescale 1ns / 1ps
+
+module FILTER_TEST_BENCH();
+
+reg [7:0] xn;
+
+reg clk, global_reset;
+
+wire [7:0] out;
+
+FILTER_TOP dut(out,xn,clk,global_reset);
+ 
+initial begin
+    clk=1'b0;
+ end
+always #5 clk=~clk;
+
+initial begin
+global_reset = 1'b1;
+xn=8'h20;
+#3 global_reset = 1'b0;
+#7 xn=8'h10;
+#10 xn=8'h08;
+#200 $finish;
+end
+endmodule
+```
+## Simulation Results:
+
+![image](https://github.com/user-attachments/assets/a3422102-1863-40d1-a663-a65b43b393d1)
+
+Now, Click on Run Simulation, and here are the simulation results:
+
+![image](https://github.com/user-attachments/assets/c7ae7152-ba82-4a7e-9fe4-e6e70e22f1a8)
+
+![image](https://github.com/user-attachments/assets/c5d08dd5-cc40-418f-a8d7-4c62eba0e7d5)
+
+Here is the output:
+
+![image](https://github.com/user-attachments/assets/725af67b-222f-4b62-98af-53d64860de8b)
+
+## Create Constraint File
+Click on open elaborated design and then on schematic:
+Now Go to IO Ports section and Set the Pins accordingly:
+Here, we have used the Artix 7 board
+
+![image](https://github.com/user-attachments/assets/adef7fcf-9677-427b-8205-4aa4ce7cbb09)
+
+Click on save and save the xdc file.
+Also, make one more change in the xdc file , as we are using the pulsor to give the clk, so add the follwoing too in constarint file:
+```set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk]```
+
+Now after this perform Synthesis, Implementation and generate bitstream and then connect the FPGA board using Hardware Manager.
+
+## FPGA Implementation Results:
+Here, we have used the Artix 7 board
+![image](https://github.com/user-attachments/assets/d0052e2f-e67b-47c3-9b66-628f16046ad5)
+
+![image](https://github.com/user-attachments/assets/9643cb92-97fe-49c1-aec7-c63d1bd6f09c)
+![image](https://github.com/user-attachments/assets/9c6fd7d2-f03c-40b0-991b-6a5d922b17fc)
+![image](https://github.com/user-attachments/assets/72672050-b27f-4f63-9405-b3a789d829e6)
+![image](https://github.com/user-attachments/assets/e215d8b1-dde4-4dd8-9612-0a08be684ea1)
 
 
 
