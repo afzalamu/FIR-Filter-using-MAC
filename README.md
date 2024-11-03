@@ -21,6 +21,9 @@
 
 ![image](https://github.com/user-attachments/assets/f495f72b-cb0e-44a9-85c8-9f791b522e54)
 
+## TIMING DIAGRAM
+![image](https://github.com/user-attachments/assets/5e8029ac-d815-44ef-8e2a-9a8266109291)
+
 Also Create FSM Design:
 ```
 `timescale 1ns / 1ps
@@ -181,7 +184,7 @@ Also, make one more change in the xdc file , as we are using the pulsor to give 
 Now after this perform Synthesis, Implementation and generate bitstream and then connect the FPGA board using Hardware Manager.
 
 ## FPGA Implementation Results:
-Here, we have used the Artix 7 board, We start with giving the Inputs (x[n])
+Here, we have used the Artix 7 board, We start with giving the Inputs x[n]
 ![image](https://github.com/user-attachments/assets/ef5d31aa-2b5d-4e46-87e3-41028eb8d8ba)
 ![image](https://github.com/user-attachments/assets/1fad5a4a-3bf8-409c-89ab-b337224a6c31)
 ![image](https://github.com/user-attachments/assets/9ce82a49-903a-414a-a3b6-23b05c92567b)
