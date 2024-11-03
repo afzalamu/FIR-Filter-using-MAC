@@ -154,7 +154,7 @@ end
 endmodule
 ```
 ## Simulation Results:
-
+Here is the Inputs:
 ![image](https://github.com/user-attachments/assets/a3422102-1863-40d1-a663-a65b43b393d1)
 
 Now, Click on Run Simulation, and here are the simulation results:
@@ -185,6 +185,12 @@ Here, we have used the Artix 7 board, We start with giving the Inputs (x[n])
 ![image](https://github.com/user-attachments/assets/ef5d31aa-2b5d-4e46-87e3-41028eb8d8ba)
 ![image](https://github.com/user-attachments/assets/1fad5a4a-3bf8-409c-89ab-b337224a6c31)
 ![image](https://github.com/user-attachments/assets/9ce82a49-903a-414a-a3b6-23b05c92567b)
+
+Outputs :
+
+![image](https://github.com/user-attachments/assets/0c68e64b-4b07-4242-aa28-1775abcdad4e)
+![image](https://github.com/user-attachments/assets/3145ef3b-12cb-4f6a-a69a-4acbf676f1ae)
+
 
 
 
