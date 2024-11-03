@@ -8,11 +8,17 @@
 
 ## VERILOG CODES 
 - First Create a New project and then create the following design sources.
+  
 ![image](https://github.com/user-attachments/assets/f3a863d8-21c1-4064-9951-301f0523c0d8)
+
 ![image](https://github.com/user-attachments/assets/07c64d44-375e-478f-87f2-be062860ea2b)
+
 ![image](https://github.com/user-attachments/assets/8d862878-7e77-43df-9941-de654c360a56)
+
 ![image](https://github.com/user-attachments/assets/63b5952b-0a75-42ad-a0ed-4fb09ccbef74)
+
 ![image](https://github.com/user-attachments/assets/758edef4-eac6-494d-83f2-8af4f70133cd)
+
 ![image](https://github.com/user-attachments/assets/f495f72b-cb0e-44a9-85c8-9f791b522e54)
 
 Also Create FSM Design:
