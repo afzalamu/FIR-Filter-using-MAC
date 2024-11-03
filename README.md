@@ -119,7 +119,7 @@ output reg [1:0] add_rom;
 endmodule
 ```
 
-## RLT SCHEMATIC
+## RTL SCHEMATIC
 Click on open elaborated design and then on Schematic.
 ![image](https://github.com/user-attachments/assets/2efcfddb-e597-439c-8fd4-39c03f722977)
 
@@ -181,13 +181,11 @@ Also, make one more change in the xdc file , as we are using the pulsor to give 
 Now after this perform Synthesis, Implementation and generate bitstream and then connect the FPGA board using Hardware Manager.
 
 ## FPGA Implementation Results:
-Here, we have used the Artix 7 board
-![image](https://github.com/user-attachments/assets/d0052e2f-e67b-47c3-9b66-628f16046ad5)
+Here, we have used the Artix 7 board, We start with giving the Inputs (x[n])
+![image](https://github.com/user-attachments/assets/ef5d31aa-2b5d-4e46-87e3-41028eb8d8ba)
+![image](https://github.com/user-attachments/assets/1fad5a4a-3bf8-409c-89ab-b337224a6c31)
+![image](https://github.com/user-attachments/assets/9ce82a49-903a-414a-a3b6-23b05c92567b)
 
-![image](https://github.com/user-attachments/assets/9643cb92-97fe-49c1-aec7-c63d1bd6f09c)
-![image](https://github.com/user-attachments/assets/9c6fd7d2-f03c-40b0-991b-6a5d922b17fc)
-![image](https://github.com/user-attachments/assets/72672050-b27f-4f63-9405-b3a789d829e6)
-![image](https://github.com/user-attachments/assets/e215d8b1-dde4-4dd8-9612-0a08be684ea1)
 
 
 
